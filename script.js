@@ -16,12 +16,14 @@ function createSnowflakes() {
         const left = Math.random() * 100; // 横のランダム位置
         const animationDelay = Math.random() * 5; // アニメーション遅延
         const randomColor = colors[Math.floor(Math.random() * colors.length)]; // ランダムな色を選ぶ
+        const rotation = Math.random() * 360; // ランダムに回転角度を設定
 
         snowflake.style.width = `${sizeWidth}px`;
         snowflake.style.height = `${sizeHeight}px`;
         snowflake.style.left = `${left}vw`;
         snowflake.style.animationDelay = `${animationDelay}s`;
         snowflake.style.backgroundColor = randomColor; // ランダムに色を設定
+        snowflake.style.transform = `rotate(${rotation}deg)`; // ランダムに回転角度を設定
 
         container.appendChild(snowflake);
     }

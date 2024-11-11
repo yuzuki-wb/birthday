@@ -67,12 +67,12 @@ main{
 
 @keyframes drift {
     0% {
-        transform: translateX(0);
+        transform: translateX(0) rotate(0deg);
     }
     50% {
-        transform: translateX(50px); /* 右に揺れる */
+        transform: translateX(50px) rotate(20deg); /* 右に揺れながら回転 */
     }
     100% {
-        transform: translateX(-50px); /* 左に揺れる */
+        transform: translateX(-50px) rotate(-20deg); /* 左に揺れながら回転 */
     }
 }
