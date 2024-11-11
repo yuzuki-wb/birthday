@@ -31,6 +31,9 @@ header h1 {
     }
 }
 
+main{
+    text-align: center;
+}
 /* 紙吹雪のスタイル */
 #snow-container {
     position: absolute;
