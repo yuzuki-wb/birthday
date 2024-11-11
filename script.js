@@ -1,7 +1,7 @@
 // 紙吹雪を生成してランダムに配置するスクリプト
 function createSnowflakes() {
     const container = document.getElementById('snow-container');
-    const numFlakes = 100; // 紙吹雪の数
+    const numFlakes = 60; // 紙吹雪の数
 
     // ランダムな色の配列
     const colors = ['#ff5a5f', '#ff9a8b', '#ffcc00', '#50bfe6', '#ffabab', '#ff77ff'];
