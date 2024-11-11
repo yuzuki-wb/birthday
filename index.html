@@ -7,13 +7,19 @@
         <link rel="stylesheet" href="index.css">
     </head>
 
-    <body>
+    <body class="no-scroll">
         <header>
             <div class="fadein">
                 <h1>Happy Birthday dear yumiko!</h1>
             </div>
         </header>
 
+        <script>
+            document.querySelector('.fade-in').addEventListener('animationend', function() {
+                document.body.classList.remove('no-scroll');
+            });
+        </script>
+        
         <div class="main">
             <h3>いつもお世話になってます。<br>直接言うことはたまにしかないけど、お弁当おいしく頂いてます。<br>
                 揉めることもあるし、一方的に不機嫌になることもあって、<br>
