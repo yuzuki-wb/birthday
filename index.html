@@ -15,9 +15,13 @@
         </header>
 
         <script>
-            document.querySelector('.fade-in').addEventListener('animationend', function() {
-                document.body.classList.remove('no-scroll');
-                console.log("アニメーション終了、スクロールが有効化されました");
+            document.addEventListener('DOMContentLoaded', function() {
+                const fadeInElement = document.querySelector('.fade-in');
+                
+                fadeInElement.addEventListener('animationend', function() {
+                    document.body.classList.remove('no-scroll');
+                    console.log("アニメーション終了、スクロールが有効化されました");
+                });
             });
         </script>
         
