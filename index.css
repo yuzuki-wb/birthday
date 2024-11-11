@@ -1,7 +1,10 @@
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: #ffe6e6;
     margin: 0;
 }
