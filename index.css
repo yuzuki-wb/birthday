@@ -32,6 +32,10 @@ header h1{
     }
 }
 
+main{
+    text-align: center;
+}
+
 #snow-container {
     position: fixed;
     top: 0;
